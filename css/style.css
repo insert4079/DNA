@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.one {
+  animation-delay: 125ms;
+}
+
+.two {
+  animation-delay: 250ms;
+}
+
+.three {
+  animation-delay: 375ms;
+}
+
+.four {
+  animation-delay: 500ms;
+}
+
+.five {
+  animation-delay: 625ms;
+}
+
+.six {
+  animation-delay: 750ms;
+}
+
+.seven {
+  animation-delay: 875ms;
+}
+
+.eight {
+  animation-delay: 1s;
+}
+
+.nine {
+  animation-delay: 1.125s;
+}
+
+.ten {
+  animation-delay: 1.25s;
+}
+
+.eleven {
+  animation-delay: 1.375s;
+}
+
+.twelve {
+  animation-delay: 1.5s;
+}
+
+.thirteen {
+  animation-delay: 1.625s;
+}
+
+.fourteen {
+  animation-delay: 1.75s;
+}
+
+.fifteen {
+  animation-delay: 1.875s;
+}
+
+.sixteen {
+  animation-delay: 2s;
+}
+
+.dna {
+  width: 100vw;
+  height: 100vh;
+  background-color: #34495e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dna__item {
+  overflow: hidden;
+  width: 120px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  position: relative;
+  animation-name: item;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.dna__stick {
+  max-width: 100%;
+  height: 4px;
+  background-color: #bdc3c7;
+}
+.dna__blue-point, .dna__red-point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 10%;
+}
+.dna__blue-point {
+  background-color: #3498db;
+  animation-name: blue;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.dna__red-point {
+  background-color: #e74c3c;
+  animation-name: red;
+  right: 0;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes item {
+  0% {
+    width: 120px;
+  }
+  25% {
+    width: 20px;
+  }
+  50% {
+    width: 120px;
+  }
+  75% {
+    width: 20px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+@keyframes red {
+  50% {
+    left: 0;
+  }
+}
+@keyframes blue {
+  50% {
+    left: calc(100% - 20px);
+    z-index: 3;
+  }
+}
