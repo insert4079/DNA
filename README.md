@@ -1,4 +1,4 @@
 # DNA
 ## Небольная анимация загрузии в виде цепочки ДНК.
 
-![](https://i.ibb.co/XS8ZnvG/54249584-e817-4d7e-9e62-a38a9bd28a15-2.gif)
+![](https://i.ibb.co/Pm5tkdf/DNA-Google-Chrome-2021-02-05-12-30-33-online-video-cutter-com.gif)
